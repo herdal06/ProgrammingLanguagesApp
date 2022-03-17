@@ -25,6 +25,7 @@ class RecyclerAdapter(val languageList : ArrayList<String>, val languageImages :
         holder.itemView.setOnClickListener { // intent to details activity
             val intent = Intent(holder.itemView.context, DetailsActivity::class.java)
             intent.putExtra("languageName", languageList.get(position))
+            intent.putExtra("languageImage",languageImages.get(position))
             holder.itemView.context.startActivity(intent)
         }
     }
