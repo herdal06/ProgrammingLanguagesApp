@@ -1,4 +1,6 @@
 package com.example.programminglanguagesapp
 
-class Language {
+import java.util.*
+
+class Language constructor(name : String, description : String, releaseDate : Date){
 }
