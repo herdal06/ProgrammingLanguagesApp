@@ -2,6 +2,7 @@ package com.example.programminglanguagesapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.programminglanguagesapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -42,6 +43,10 @@ class MainActivity : AppCompatActivity() {
         languageDrawableList.add(javaScriptDrawableId)
         languageDrawableList.add(goDrawableId)
         languageDrawableList.add(pythonDrawableId)
+
+        // Todo : Adapter
+
+
 
     }
 }
