@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.recycler_row.view.*
 
 
-class RecyclerAdapter(val languageList : ArrayList<String>, val languageImages : ArrayList<Bitmap>) : RecyclerView.Adapter<RecyclerAdapter.LanguageVH>() {
+class RecyclerAdapter(val languageList : ArrayList<String>, val languageImages : ArrayList<Int>) : RecyclerView.Adapter<RecyclerAdapter.LanguageVH>() {
 
     class LanguageVH(itemView : View) : RecyclerView.ViewHolder(itemView) {
 
