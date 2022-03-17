@@ -1,5 +1,6 @@
 package com.example.programminglanguagesapp
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.view.LayoutInflater
 import android.view.View
@@ -21,11 +22,15 @@ class RecyclerAdapter(val languageList : ArrayList<String>, val languageImages :
 
     override fun onBindViewHolder(holder: LanguageVH, position: Int) {
         holder.itemView.recyclerViewTextView.text = languageList.get(position)
+        holder.itemView.setOnClickListener { // intent to details activity
+            val intent = Intent(holder.itemView.context, DetailsActivity::class.java)
+            intent.putExtra("languageName", languageList.get(position))
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {
         return languageList.size
-
     }
 }
 
